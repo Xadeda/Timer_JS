@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="stopWatch">
+            <div id="timerEnd" class="timerEnd">Timer End
+                <span  onclick="timerEndClose()" >x</span>
+            </div>
+           <div class="uhr">
+               <input class="timerAlertH" type="number"  placeholder="hours...">
+               <input class="timerAlertM" type="number"  placeholder="min...">
+               <input class="timerAlertS" type="number"  placeholder="sec...">
+           </div>
+            <h1 class="time">00:00:00</h1>
+            <div class="controls">
+                <img 
+                onclick="stopTimer()" 
+                src="https://cdn-icons-png.flaticon.com/512/120/120632.png"
+                alt="stop">
+                <img 
+                onclick="startTimer()" 
+                src="https://icon-library.com/images/windows-start-button-icon-download/windows-start-button-icon-download-15.jpg"
+                alt="stop">
+                <img 
+                onclick="resetTimer()" 
+                src="https://www.freeiconspng.com/uploads/red-restart-icon-29.png"
+                alt="stop">
+            </div>
+        </div>
+        <audio id="timerTon" src="./Neuer Ordner/timer-end.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
